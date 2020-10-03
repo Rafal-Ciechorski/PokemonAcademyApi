@@ -11,4 +11,8 @@ public class PokemonResponse {
     public String getNext(){
         return next;
     }
+
+    public List<PokemonResult> getResults() {
+        return results;
+    }
 }

@@ -12,7 +12,6 @@ public class Pokemon {
     String url;
 
     public Pokemon(){
-
     }
 
     public Pokemon(int id, String name, String url) {

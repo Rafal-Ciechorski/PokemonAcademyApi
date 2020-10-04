@@ -3,18 +3,19 @@ package pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.repository.PokemonDetailsRepository;
-import pl.sdaacademy.PokemonAcademyApi.apploader.repository.PokeApiRepository;
 import pl.sdaacademy.PokemonAcademyApi.apploader.repository.Pokemon;
 import pl.sdaacademy.PokemonAcademyApi.apploader.repository.PokemonRepository;
 
 @Service
-public class PokemonService {
+public class PokemonDetailsService {
 
     private final PokemonRepository pokemonRepository;
+    private final PokemonDetailsRepository pokemonDetailsRepository;
 
     @Autowired
-    PokemonService(PokemonRepository pokemonRepository){
+    PokemonDetailsService(PokemonRepository pokemonRepository, PokemonDetailsRepository pokemonDetailsRepository){
         this.pokemonRepository=pokemonRepository;
+        this.pokemonDetailsRepository = pokemonDetailsRepository;
     }
 
     public Pokemon getPokemon(String name){

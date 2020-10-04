@@ -3,17 +3,17 @@ package pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.service.PokemonService;
+import pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.service.PokemonDetailsService;
 import pl.sdaacademy.PokemonAcademyApi.apploader.repository.Pokemon;
 
 @RequestMapping("/pokemons")
 @RestController
 public class PokemonController {
 
-    private final PokemonService pokemonService;
+    private final PokemonDetailsService pokemonService;
 
     @Autowired
-    public PokemonController(PokemonService pokemonService){
+    public PokemonController(PokemonDetailsService pokemonService){
         this.pokemonService=pokemonService;
     }
 

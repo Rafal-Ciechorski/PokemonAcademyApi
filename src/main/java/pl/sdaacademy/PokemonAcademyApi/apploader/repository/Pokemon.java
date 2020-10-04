@@ -7,7 +7,7 @@ import javax.persistence.Id;
 public class Pokemon {
 
     @Id
-    String id;
+    int id;
     String name;
     String url;
 
@@ -15,17 +15,17 @@ public class Pokemon {
 
     }
 
-    public Pokemon(String id, String name, String url) {
+    public Pokemon(int id, String name, String url) {
         this.id = id;
         this.name = name;
         this.url = url;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

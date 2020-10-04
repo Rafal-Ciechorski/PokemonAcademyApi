@@ -1,4 +1,4 @@
-package pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.repository;
+package pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.repository.pokeapi.ability;
 
 public class AbilityDetails {
     private String name;

@@ -1,6 +1,4 @@
-package pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.repository;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.repository.pokeapi.image;
 
 public class Sprites {
 

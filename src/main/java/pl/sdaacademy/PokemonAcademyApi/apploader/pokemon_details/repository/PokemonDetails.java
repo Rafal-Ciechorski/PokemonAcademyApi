@@ -11,7 +11,7 @@ public class PokemonDetails {
     private int height;
     private String name;
 
-    public PokemonDetails(){
+    public PokemonDetails() {
 
     }
 

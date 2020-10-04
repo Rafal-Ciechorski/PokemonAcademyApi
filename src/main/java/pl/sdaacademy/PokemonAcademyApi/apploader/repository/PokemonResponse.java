@@ -8,7 +8,7 @@ public class PokemonResponse {
 
     private List<PokemonResult> results;
 
-    public String getNext(){
+    public String getNext() {
         return next;
     }
 

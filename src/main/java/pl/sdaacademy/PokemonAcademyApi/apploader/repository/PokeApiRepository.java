@@ -16,14 +16,14 @@ public class PokeApiRepository {
     private final RestTemplate restTemplate;
 
     @Autowired
-    public PokeApiRepository(RestTemplate restTemplate, @Value("${pokeapi.url}") String urlAddress){
-        this.urlAddress= urlAddress;
+    public PokeApiRepository(RestTemplate restTemplate, @Value("${pokeapi.url}") String urlAddress) {
+        this.urlAddress = urlAddress;
         this.restTemplate = restTemplate;
     }
 
-    public PokemonResponse getPokemonResponse(int offset, int limit){
+    public PokemonResponse getPokemonResponse(int offset, int limit) {
         //RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.getForObject(String.format(urlAddress, offset,limit), PokemonResponse.class);
+        return restTemplate.getForObject(String.format(urlAddress, offset, limit), PokemonResponse.class);
 
 
         //return restTemplate.getForObject(String.format(URL, offset,limit), PokemonResponse.class);

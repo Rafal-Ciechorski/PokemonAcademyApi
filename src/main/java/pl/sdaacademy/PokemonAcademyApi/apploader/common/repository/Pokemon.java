@@ -1,4 +1,4 @@
-package pl.sdaacademy.PokemonAcademyApi.apploader.repository;
+package pl.sdaacademy.PokemonAcademyApi.apploader.common.repository;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,7 +11,7 @@ public class Pokemon {
     String name;
     String url;
 
-    public Pokemon(){
+    public Pokemon() {
     }
 
     public Pokemon(int id, String name, String url) {

@@ -1,8 +1,6 @@
-package pl.sdaacademy.PokemonAcademyApi.apploader.repository;
+package pl.sdaacademy.PokemonAcademyApi.apploader.common.repository;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Optional;
 

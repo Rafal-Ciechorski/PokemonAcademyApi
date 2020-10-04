@@ -3,6 +3,7 @@ package pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.repository.PokemonDetails;
 import pl.sdaacademy.PokemonAcademyApi.apploader.pokemon_details.service.PokemonDetailsService;
 import pl.sdaacademy.PokemonAcademyApi.apploader.repository.Pokemon;
 
@@ -18,7 +19,7 @@ public class PokemonController {
     }
 
     @GetMapping("/{name}")
-    public Pokemon getPokemon(@PathVariable String name){
+    public PokemonDetails getPokemon(@PathVariable String name){
         return pokemonService.getPokemon(name);
     }
 

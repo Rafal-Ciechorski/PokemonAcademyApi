@@ -33,12 +33,12 @@ public class PokemonDetailsService {
         this.pokemonDetailsRepository = pokemonDetailsRepository;
     }
 
-//    public PokemonDetails getPokemonDetails(String name) {
-//        Pokemon pokemon = pokemonRepository.findByName(name).orElseThrow(() -> {
-//            throw new NoPokemonFoundException(name);
-//        });
-//        return providePokemonDetails(pokemon);
-//    }
+    public PokemonDetails getPokemonDetails(String name) throws NoPokemonFoundException{
+        Pokemon pokemon = pokemonRepository.findByName(name).<NoPokemonFoundException>orElseThrow(() -> {
+            throw new NoPokemonFoundException(name);
+        });
+        return providePokemonDetails(pokemon);
+    }
 
     public List<PokemonDetails> getPokemonDetails(List<String> pokemonNames) {
         return pokemonNames.stream().map(pokemonRepository::findByName)
